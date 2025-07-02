@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "c734eccb-8498-4d3c-93ce-232d5617d0c8",
+		"name": "Minex Program",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46359943"
+	},
+	"item": [
+		{
+			"name": "CREATE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"firstName\" : \"Joe\",\r\n    \"lastName\" : \"B\",\r\n    \"position\" : \"Software Engineer\",\r\n    \"department\" : \"Engineering\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"firstName\" : \"Joe\",\r\n    \"lastName\" : \"D\",\r\n    \"position\" : \"Software Engineer III\",\r\n    \"department\" : \"Engineering\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employee/6acc8380-77bc-470d-ac61-a9408f8a3e09",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"6acc8380-77bc-470d-ac61-a9408f8a3e09"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/employee/6acc8380-77bc-470d-ac61-a9408f8a3e09",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"6acc8380-77bc-470d-ac61-a9408f8a3e09"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REPORTING",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/reporting/16a596ae-edd3-4847-99fe-c4518e82c86f",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reporting",
+						"16a596ae-edd3-4847-99fe-c4518e82c86f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SUBMIT COMPENSATION",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"salary\" : \"1000.45\",\r\n    \"effectiveDate\" : \"2025-08-24\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/submit-compensation/16a596ae-edd3-4847-99fe-c4518e82c86f",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"submit-compensation",
+						"16a596ae-edd3-4847-99fe-c4518e82c86f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "READ COMPENSATION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/compensation/6acc8380-77bc-470d-ac61-a9408f8a3e09",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"compensation",
+						"6acc8380-77bc-470d-ac61-a9408f8a3e09"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

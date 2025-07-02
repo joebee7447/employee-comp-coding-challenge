@@ -33,6 +33,9 @@
       },
       {
         "employeeId": "c0c2293d-16bd-4603-8e08-638a9d18b22c"
+      },
+      {
+        "employeeId": "a2bd0fd6-0718-4a39-8639-0dada6f6b219"
       }
     ]
   },
@@ -48,6 +51,25 @@
     "firstName" : "George",
     "lastName" : "Harrison",
     "position" : "Developer III",
+    "department" : "Engineering"
+  },
+  {
+    "employeeId" : "a2bd0fd6-0718-4a39-8639-0dada6f6b219",
+    "firstName" : "Joe",
+    "lastName" : "B",
+    "position" : "Software Engineer",
+    "department" : "Engineering",
+    "directReports" : [
+      {
+        "employeeId" : "4f324fc8-1dd9-4b6c-a92c-e239769c766d"
+      }
+    ]
+  },
+  {
+    "employeeId" : "4f324fc8-1dd9-4b6c-a92c-e239769c766d",
+    "firstName" : "Josh",
+    "lastName" : "C",
+    "position" : "Software Engineer III",
     "department" : "Engineering"
   }
 ]
