@@ -22,6 +22,7 @@ public class DataBootstrap {
 
     @PostConstruct
     public void init() {
+        //added some new test data to database json for testing purposes
         InputStream inputStream = this.getClass().getResourceAsStream(DATASTORE_LOCATION);
 
         Employee[] employees = null;
